@@ -1,3 +1,5 @@
+package ru.progwards.java1.lessons.compare_if_cycles;
+
 import com.sun.nio.sctp.SctpSocketOption;
 
 public class TriangleSimpleInfo {
