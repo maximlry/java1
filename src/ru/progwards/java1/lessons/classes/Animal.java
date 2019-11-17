@@ -1,3 +1,5 @@
+package ru.progwards.java1.lessons.classes;
+
 public class Animal {
 
     double weight;
@@ -30,7 +32,7 @@ public class Animal {
     @Override
     public String toString() {
 
-        return "I am " + getKind() + ", eat" + getFoodKind();
+        return "I am " + getKind() + ", eat " + getFoodKind() + " " +  CalculateFoodWeight();
     }
 
     public double getWeight() {
@@ -40,5 +42,10 @@ public class Animal {
     public double getFoodCoeff() {
         return 0.02;
     }
+
+    public double CalculateFoodWeight() {
+        return weight * getFoodCoeff();
+    }
+
 }
 
